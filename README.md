@@ -26,3 +26,6 @@ Notes:
 Most of the configuration can be change in the config.go file. The maxmind ip and location structure can be change. However, FAIGeoIP was built to work only with the current maxmind city database in csv format. Any other format might produce unexpected result or error.
 
 Future versions of FAiGeoIP might support more than one type of database but because of the shear volume of how memory is consumed. That may not be possible.
+
+Known Issues:
+The stop command might not kill the process properly on some system.
