@@ -3,7 +3,7 @@ A GeoIP server that written in Go. I wrote this server to replace my aging old F
 
 This server require a lot of memory to run. It was tested to consume at least 5 GB of memory.
 
-The trade off for FAIGeoIP memory consumption is that it doesn't consume SQL query nor disk read or drive because everything is hold in memory.
+The trade off for FAIGeoIP memory consumption is that it doesn't consume SQL query nor disk read or write because everything is hold in memory.
 
 FAIGeoIP server was not design with maximum security nor as an eco friendly software. It was design with only one thing in mind and that is speed.
 
