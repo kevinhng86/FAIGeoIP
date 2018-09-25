@@ -22,7 +22,7 @@
 #    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN            #
 #    THE SOFTWARE.                                                                        #
 #                                                                                         #
-#     CREDIT:                                                                              #
+#    CREDIT:                                                                              #
 #    A special thanks to Chirag Mehta                                                     #
 #    http://chir.ag/projects/geoiploc for the half division formula.                      #
 #                                                                                         #
