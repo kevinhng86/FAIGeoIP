@@ -1,5 +1,5 @@
 # FAIGeoIP
-A GeoIP server that written in Go. 
+A GeoIP server that written in Go. I wrote this server to replace my aging old Fai_GeoIP server that ran on php. That one does not consume memory but consume a tremendous amount of queries to the database. It also respond 50% slower to this version.
 
 This server does not use MySQL or any database engine.
 This server require a lot of memory to run. It was tested to consume at least 5 GB of memory.
