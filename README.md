@@ -18,7 +18,7 @@ How to use: (If you didn't reconfigure the program)
 1. Build the program.
 2. Download the Maxmind City database from(www.maxmind.com) in csv format. Extract the files into a folder call "maxmind". Leave the built executeable file in the parent folder of the folder maxmind.
 3. First run, start the executable file with "update". It will take sometimes to import the maxmind database.
-4. After that start the executable file with "start".
+4. After that start the executable file with "start". The server default port when I wrote this program was 8888 but that could easily be changed in config.go before build.
 5. Warning: when use stop on the executeable, it will kill whatever process ID that is recorded in the pid file.
 
 Notes:
