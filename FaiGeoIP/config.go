@@ -2,9 +2,7 @@
 ###########################################################################################
 #                                                                                         #
 #    Copyright 2018 Khang H. Nguyen (kevinhg86)                                           #
-#    E-mail: kevin@fai.host | Web: http://kevinhng86.iblog.website                        #
-#    Contributors: https://github.com/kevinhng86/noka-encryption/blob/master/CONTRIBUTORS #                                                    #
-#                                                                                         #    
+#    E-mail: kevin@fai.host | Web: http://kevinhng86.iblog.website                        #  
 #                                                                                         #
 #    Permission is hereby granted, free of charge, to any person obtaining a copy         #
 #    of this software and associated documentation files (the "Software"), to deal        #
@@ -24,7 +22,7 @@
 #    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN            #
 #    THE SOFTWARE.                                                                        #
 #                                                                                         #
-#	 CREDIT:                                                                              #
+#    CREDIT:                                                                              #
 #    A special thanks to Chirag Mehta                                                     #
 #    http://chir.ag/projects/geoiploc for the half division formula.                      #
 #                                                                                         #
