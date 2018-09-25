@@ -38,32 +38,32 @@ import(
 )
 
 func Kill(pidFile string) (bool, error) {
-	 if _, err := os.Stat(pidFile); os.IsNotExist(err) {
-		// PID File is not exist
-		return true, errors.New("PID file is not existed. The program is probably not running.")
+    if _, err := os.Stat(pidFile); os.IsNotExist(err) {
+        // PID File is not exist
+	return true, errors.New("PID file is not existed. The program is probably not running.")
     } else {
-		// PID File Exist.
-		f, err := os.Open(pidFile)
-		if err != nil { return false, errors.New("PID file " + pidFile + " exist, but couldn't be open with error: " + err.Error()) }
+	// PID File Exist.
+	f, err := os.Open(pidFile)
+	if err != nil { return false, errors.New("PID file " + pidFile + " exist, but couldn't be open with error: " + err.Error()) }
 
-		fi, err := f.Stat()		
-		if err != nil { return false, errors.New("Couldn't run file stat command on PID file " + pidFile + " with error: " + err.Error() ) }
+	fi, err := f.Stat()		
+	if err != nil { return false, errors.New("Couldn't run file stat command on PID file " + pidFile + " with error: " + err.Error() ) }
 
-		d := make( []byte, fi.Size() )
+	d := make( []byte, fi.Size() )
 
-		_, err = f.Read(d)
-		if err != nil { return false, errors.New("Pid file " + pidFile +" exist but couldn't read with error: " + err.Error() ) }
+	_, err = f.Read(d)
+	if err != nil { return false, errors.New("Pid file " + pidFile +" exist but couldn't read with error: " + err.Error() ) }
 		
-		pid, err := strconv.Atoi(string(d))
+	pid, err := strconv.Atoi(string(d))
         if err != nil { return false, errors.New("PID file is not the right format. Please delete PID file "+ pidFile +" manually.") }
         
         process, err := os.FindProcess( pid )
         
         if err != nil {
-			// Windows process not found
-			// If PID file is existed but process is not found then remove pid files.			
-			RemovePIDFile(pidFile)
-			return true, errors.New("Process was not found from PID file, thus PID file is removed.")
+		// Windows process not found
+		// If PID file is existed but process is not found then remove pid files.			
+		RemovePIDFile(pidFile)
+		return true, errors.New("Process was not found from PID file, thus PID file is removed.")
         } else {
             err = process.Signal(syscall.Signal(0))
 			if err == nil {
