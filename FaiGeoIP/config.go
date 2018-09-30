@@ -30,9 +30,9 @@
 */
 package FaiGeoIP
 
-func init(){
+func init(){	
     //Http server config
-    HttpPort = "8888"
+    HttpPort = "17824"
 
     // Maxmind Configuration
     maxmindpath = "./maxmind/"
@@ -58,5 +58,6 @@ func ConfigInit(){
     HttpMessage += "example.com/?ip=1.1.1.1&locale=en. Locale can be omitted. If locale is ommitted then locale en will use. "
     HttpMessage += "The following locale is supported: \"" + maxmind.locdbname + "\"."
     HttpMessage += "If a GET request is reveiced with the ip parameter is set the server will response in JSON format. The ip parameter must be greater than 0 length.</p>"
+    HttpMessage += "This product includes GeoLite2 data created by MaxMind, available from <a href=\"http://www.maxmind.com\">http://www.maxmind.com</a>."
     HttpMessage += "</body></html>"
 }
