@@ -32,7 +32,7 @@ package FaiGeoIP
 
 func init(){	
     //Http server config
-    HttpPort = "17824"
+    HttpPort = "8888"
 
     // Maxmind Configuration
     maxmindpath = "./maxmind/"
